@@ -6,11 +6,13 @@ import tek.bdd.utility.SeleniumUtility;
 
 public class HooksSteps extends SeleniumUtility {
     @Before
-    public void beforeEachScenario(){
-      setupBrowser();
+    public void beforeEachScenario() {
+        setupBrowser();
     }
+
     @After
-    public void afterEachScenario(){
+    public void afterEachScenario() {
         quitBrowser();
     }
+
 }
